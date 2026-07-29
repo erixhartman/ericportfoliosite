@@ -5,31 +5,31 @@ window.PORTFOLIO_CONTENT = {
     tagline: "I build complex, data-driven products across fintech, streaming, identity, and platform engineering.",
     location: "Toronto, Canada",
     email: "ericadamhartman@gmail.com",
-    phone: "(647) 460-5068",
+    phone: "Redacted",
     showPhone: false,
     linkedin: "https://www.linkedin.com/in/ericadamhartman",
     resumeUrl: "",
-    availability: "Open to senior product leadership conversations",
+    availability: "Always happy to discuss challenging problems.",
   },
 
   intro: {
     eyebrow: "Technical product leader · Former software engineer",
     summary:
-      "Senior Product Manager with a track record of launching ambitious 0→1 products, creating new revenue streams, reducing operating costs, and scaling systems used by millions. My software engineering background helps me translate between customer needs, business strategy, risk, data, and technical architecture.",
+      "Senior Product Manager with a track record of launching ambitious 0→1 products, creating new revenue streams, reducing operating costs, and scaling systems used by millions. My backgrounds in software engineering and psychology helps me translate between customer needs, business strategy, risk, data, and technical architecture.",
   },
 
   metrics: [
+    { value: "0→1", label: "banking and monetization launches" },
     { value: "$10M+", label: "annual revenue created" },
     { value: "350%", label: "subscriber growth" },
     { value: "48%", label: "streaming quality improvement" },
     { value: "20%", label: "annual Opex reduction" },
     { value: "1M+", label: "daily identity-platform users" },
-    { value: "0→1", label: "banking and monetization launches" },
-  ],
+      ],
 
   experience: [
     {
-      company: "New Digital Bank",
+      company: "Haventree Bank",
       role: "Senior Product Manager",
       period: "Jun 2025 — Present",
       theme: "Banking platforms, risk, operations, analytics, and AI",
@@ -47,7 +47,7 @@ window.PORTFOLIO_CONTENT = {
       company: "Sportsnet",
       role: "Product Manager",
       period: "Apr 2022 — Jun 2025",
-      theme: "OTT streaming, growth, monetization, and video platforms",
+      theme: "OTT streaming, growth, monetization, and customer centricity",
       summary:
         "Owned product vision, roadmap, and development for Sportsnet+, a direct-to-consumer live streaming service.",
       achievements: [
@@ -97,7 +97,7 @@ window.PORTFOLIO_CONTENT = {
 
   caseStudies: [
     {
-      index: "01",
+      index: "",
       title: "Launching trust capabilities for a new digital bank",
       category: "Fintech · 0→1 platform",
       challenge:
@@ -109,7 +109,7 @@ window.PORTFOLIO_CONTENT = {
       note: "Details are intentionally generalized to protect confidential information.",
     },
     {
-      index: "02",
+      index: "",
       title: "Building a new monetization engine for live sports",
       category: "Streaming · Revenue",
       challenge:
@@ -121,7 +121,7 @@ window.PORTFOLIO_CONTENT = {
       note: "Publicly shareable summary based on resume-level information.",
     },
     {
-      index: "03",
+      index: "",
       title: "Turning streaming reliability into a growth lever",
       category: "Streaming · Retention",
       challenge:
@@ -133,7 +133,7 @@ window.PORTFOLIO_CONTENT = {
       note: "Publicly shareable summary based on resume-level information.",
     },
     {
-      index: "04",
+      index: "",
       title: "Scaling identity across a national retail ecosystem",
       category: "Identity · Platform",
       challenge:
@@ -160,7 +160,9 @@ window.PORTFOLIO_CONTENT = {
     "Identity and authentication",
     "Generative AI workflows",
     "Cross-functional leadership",
-    "React and Node.js",
+    "Lunch",
+    "Deep baseball knowledge",
+    "Has a cute puppy",
   ],
 
   education: [
