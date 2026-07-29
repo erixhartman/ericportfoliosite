@@ -120,8 +120,7 @@ function renderExperience() {
       `
       : `<div class="job-period">${item.period}</div>`;
 
-    const job = el("article", "job reveal");
-
+const job = el("article", `job reveal ${item.className || ""}`);
     job.innerHTML = `
       ${productImage}
 
