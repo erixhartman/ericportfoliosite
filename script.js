@@ -86,8 +86,6 @@ function renderCaseStudies() {
         <p>${item.outcome}</p>
       </div>
 
-      <div class="job ${job.className}">
-
       ${item.note ? `<p class="case-note">${item.note}</p>` : ""}
     `;
 
