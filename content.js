@@ -106,7 +106,7 @@ window.PORTFOLIO_CONTENT = {
         "Defined platform capabilities across risk, operations, engineering, legal, compliance, and analytics; sequenced work around launch-critical customer journeys; and created measurable operating controls.",
       outcome:
         "Improved risk coverage, reduced manual review, enabled compliant communications, equipped support agents with integrated tooling, and established an end-to-end KPI framework.",
-      note: "Details are intentionally generalized to protect confidential information.",
+      note: "",
     },
     {
       index: "",
