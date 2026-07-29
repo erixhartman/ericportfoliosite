@@ -129,27 +129,34 @@ h1 { margin: 0; font-size: clamp(54px, 9vw, 116px); line-height: .92; }
   border-bottom: 1px solid var(--line);
 }
 .job-period { color: var(--muted); font-size: 14px; }
-.job-visual { margin: 0; }
+.job-visual {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--surface-2);
+}
+
 .job-visual img {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 3;
+  height: 100%;
   object-fit: cover;
   object-position: center;
-  border: 1px solid var(--line);
-  border-radius: 16px;
-  background: var(--surface);
-  box-shadow: 0 20px 55px rgba(0, 0, 0, .22);
-  transition: transform .25s ease, border-color .25s ease;
 }
-.job:hover .job-visual img {
-  transform: translateY(-3px);
-  border-color: rgba(237, 79, 198, .38);
-}
+
 .job-visual figcaption {
-  margin-top: 12px;
+  margin-top: 10px;
   color: var(--muted);
-  font-size: 13px;
+  font-size: 14px;
+}
+.job:hover .job-visual {
+  transform: translateY(-4px);
+  border-color: rgba(237,79,198,.35);
+  box-shadow: 0 14px 36px rgba(0,0,0,.35);
 }
 .job-identity { padding-top: 2px; }
 .job-details { min-width: 0; }
