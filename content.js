@@ -8,7 +8,7 @@ window.PORTFOLIO_CONTENT = {
     phone: "Redacted",
     showPhone: false,
     linkedin: "https://www.linkedin.com/in/ericadamhartman",
-    resumeUrl: "",
+    resumeUrl: "Eric-Hartman-Resume.pdf",    
     availability: "Always happy to discuss challenging problems.",
   },
 
