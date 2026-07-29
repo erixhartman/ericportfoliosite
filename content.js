@@ -32,7 +32,7 @@ window.PORTFOLIO_CONTENT = {
       company: "Haventree Bank",
       role: "Senior Product Manager",
       period: "Jun 2025 — Present",
-      image: "assets/experience/haventree-product.svg",
+      image: "assets/experience/haventree.png",
       imageAlt: "Illustrative digital banking product interface",
       theme: "Banking platforms, risk, operations, analytics, and AI",
       summary:
@@ -49,7 +49,7 @@ window.PORTFOLIO_CONTENT = {
       company: "Sportsnet",
       role: "Product Manager",
       period: "Apr 2022 — Jun 2025",
-      image: "assets/experience/sportsnet-plus.svg",
+      image: "assets/experience/sportsnet.png",
       imageAlt: "Illustrative Sportsnet+ streaming product interface",
       theme: "OTT streaming, growth, monetization, and customer centricity",
       summary:
@@ -67,7 +67,7 @@ window.PORTFOLIO_CONTENT = {
       company: "Loblaw Digital",
       role: "Product Manager",
       period: "Dec 2020 — Apr 2022",
-      image: "assets/experience/pcid.svg",
+      image: "assets/experience/pcid.png",
       imageAlt: "Illustrative PCid identity product interface",
       theme: "Identity, experimentation, and platform products",
       summary:
@@ -83,7 +83,7 @@ window.PORTFOLIO_CONTENT = {
       company: "Loblaw Digital",
       role: "Intermediate Software Developer",
       period: "Nov 2018 — Dec 2020",
-      image: "assets/experience/design-system.svg",
+      image: "assets/experience/ld.png",
       imageAlt: "Illustrative component library and design system interface",
       theme: "Design systems and internal platforms",
       summary:
@@ -97,7 +97,7 @@ window.PORTFOLIO_CONTENT = {
       company: "WhoPlusYou",
       role: "Software Developer",
       period: "Oct 2017 — Aug 2018",
-      image: "assets/experience/whoplusyou.svg",
+      image: "assets/experience/whoplusyou.png",
       imageAlt: "Illustrative WhoPlusYou product interface",
       theme: "Full-stack product development",
       summary: "Worked on the core product using Laravel and React.",
