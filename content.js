@@ -30,6 +30,7 @@ window.PORTFOLIO_CONTENT = {
   experience: [
     {
       company: "Haventree Bank",
+      className: "job-bank",
       role: "Senior Product Manager",
       period: "Jun 2025 — Present",
       image: "assets/experience/haventree.png",
@@ -48,6 +49,7 @@ window.PORTFOLIO_CONTENT = {
     {
       company: "Sportsnet",
       role: "Product Manager",
+      className: "job-sportsnet",
       period: "Apr 2022 — Jun 2025",
       image: "assets/experience/sportsnet.png",
       imageAlt: "Illustrative Sportsnet+ streaming product interface",
@@ -65,6 +67,7 @@ window.PORTFOLIO_CONTENT = {
     },
     {
       company: "Loblaw Digital",
+      className: "job-pcid",
       role: "Product Manager",
       period: "Dec 2020 — Apr 2022",
       image: "assets/experience/pcid.png",
@@ -81,6 +84,7 @@ window.PORTFOLIO_CONTENT = {
     },
     {
       company: "Loblaw Digital",
+      className: "job-loblaw",
       role: "Intermediate Software Developer",
       period: "Nov 2018 — Dec 2020",
       image: "assets/experience/ld.png",
@@ -95,6 +99,7 @@ window.PORTFOLIO_CONTENT = {
     },
     {
       company: "WhoPlusYou",
+      className: "job-whoplusyou",
       role: "Software Developer",
       period: "Oct 2017 — Aug 2018",
       image: "assets/experience/whoplusyou.png",
