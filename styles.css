@@ -120,8 +120,39 @@ h1 { margin: 0; font-size: clamp(54px, 9vw, 116px); line-height: .92; }
 .case-section p { margin: 0; color: var(--muted); }
 .case-note { position: relative; z-index: 1; margin-top: 30px; color: #757d87; font-size: 12px; }
 .timeline { border-top: 1px solid var(--line); }
-.job { display: grid; grid-template-columns: .8fr 1.2fr 2.2fr; gap: 38px; padding: 42px 0; border-bottom: 1px solid var(--line); }
+.job {
+  display: grid;
+  grid-template-columns: minmax(220px, .95fr) 1.05fr 2.15fr;
+  gap: 38px;
+  align-items: start;
+  padding: 42px 0;
+  border-bottom: 1px solid var(--line);
+}
 .job-period { color: var(--muted); font-size: 14px; }
+.job-visual { margin: 0; }
+.job-visual img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--surface);
+  box-shadow: 0 20px 55px rgba(0, 0, 0, .22);
+  transition: transform .25s ease, border-color .25s ease;
+}
+.job:hover .job-visual img {
+  transform: translateY(-3px);
+  border-color: rgba(237, 79, 198, .38);
+}
+.job-visual figcaption {
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 13px;
+}
+.job-identity { padding-top: 2px; }
+.job-details { min-width: 0; }
 .job-company { margin: 0 0 4px; font: 700 24px/1.2 "Manrope", sans-serif; }
 .job-role { color: var(--accent); }
 .job-theme { margin: 0 0 18px; font-weight: 700; }
@@ -159,7 +190,8 @@ h1 { margin: 0; font-size: clamp(54px, 9vw, 116px); line-height: .92; }
   .metric:nth-child(-n+4) { border-bottom: 1px solid var(--line); }
   .section-heading { grid-template-columns: 1fr; gap: 14px; }
   .case-grid, .about-grid, .contact-grid { grid-template-columns: 1fr; }
-  .job { grid-template-columns: 1fr; gap: 14px; }
+  .job { grid-template-columns: minmax(180px, .8fr) 1.2fr; gap: 24px; }
+  .job-details { grid-column: 1 / -1; }
   .about-grid { gap: 42px; }
   .education-list { grid-template-columns: 1fr; }
   .site-footer { flex-direction: column; }
@@ -176,6 +208,9 @@ h1 { margin: 0; font-size: clamp(54px, 9vw, 116px); line-height: .92; }
   .section { padding-block: 90px; }
   .case-card { min-height: auto; padding: 24px; }
   .case-card h3 { margin-top: 45px; }
+  .job { grid-template-columns: 1fr; }
+  .job-details { grid-column: auto; }
+  .job-visual img { aspect-ratio: 16 / 9; }
   .contact { padding-block: 100px; }
 }
 @media (prefers-reduced-motion: reduce) {
