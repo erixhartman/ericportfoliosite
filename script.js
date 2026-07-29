@@ -1,182 +1,192 @@
-window.PORTFOLIO_CONTENT = {
-  profile: {
-    name: "Eric Hartman",
-    title: "Senior Product Manager",
-    tagline: "I build complex, data-driven products across fintech, streaming, identity, and platform engineering.",
-    location: "Toronto, Canada",
-    email: "ericadamhartman@gmail.com",
-    phone: "Redacted",
-    showPhone: false,
-    linkedin: "https://www.linkedin.com/in/ericadamhartman",
-    resumeUrl: "Eric-Hartman-Resume.pdf",    
-    availability: "Always happy to discuss challenging problems.",
-  },
+const content = window.PORTFOLIO_CONTENT;
 
-  intro: {
-    eyebrow: "Technical product leader · Former software engineer",
-    summary:
-      "Senior Product Manager with a track record of launching ambitious 0→1 products, creating new revenue streams, reducing operating costs, and scaling systems used by millions. My backgrounds in software engineering and psychology helps me translate between customer needs, business strategy, risk, data, and technical architecture.",
-  },
+const $ = (selector) => document.querySelector(selector);
 
-  metrics: [
-    { value: "0→1", label: "banking and monetization launches" },
-    { value: "$10M+", label: "annual revenue created" },
-    { value: "350%", label: "subscriber growth" },
-    { value: "48%", label: "streaming quality improvement" },
-    { value: "20%", label: "annual Opex reduction" },
-    { value: "1M+", label: "daily identity-platform users" },
-      ],
+const el = (tag, className, html = "") => {
+  const node = document.createElement(tag);
 
-  experience: [
-    {
-      company: "Haventree Bank",
-      role: "Senior Product Manager",
-      period: "Jun 2025 — Present",
-      image: "assets/experience/haventree-product.svg",
-      imageAlt: "Illustrative digital banking product interface",
-      theme: "Banking platforms, risk, operations, analytics, and AI",
-      summary:
-        "Leading the Core Trust and Growth portfolio for the launch of a new Canadian digital bank.",
-      achievements: [
-        "Launched fraud and AML platform capabilities with a cross-functional team of 12, improving risk coverage and reducing manual review.",
-        "Delivered a compliant document-generation framework supporting tax forms, account documentation, customer communications, and government reporting obligations.",
-        "Led internal support tooling that integrates with core banking systems, helping agents manage accounts more efficiently and reduce handling time.",
-        "Built the product analytics framework and KPI system for the end-to-end customer journey, enabling funnel optimization, operational monitoring, and investment decisions.",
-        "Embedded generative AI into discovery, requirements, and analysis to increase delivery capacity across a broader portfolio.",
-      ],
-    },
-    {
-      company: "Sportsnet",
-      role: "Product Manager",
-      period: "Apr 2022 — Jun 2025",
-      image: "assets/experience/sportsnet-plus.svg",
-      imageAlt: "Illustrative Sportsnet+ streaming product interface",
-      theme: "OTT streaming, growth, monetization, and customer centricity",
-      summary:
-        "Owned product vision, roadmap, and development for Sportsnet+, a direct-to-consumer live streaming service.",
-      achievements: [
-        "Helped drive more than 350% subscriber growth across the service.",
-        "Led a six-month stability and performance program that improved streaming quality metrics by 48%, increased NPS by 10%, and reduced churn by 21%.",
-        "Launched an in-stream advertising platform generating more than $10M in annual revenue.",
-        "Redesigned the purchase flow using interviews and experimentation, increasing cart size by 39% and lifetime value by 19%.",
-        "Led a service-wide video engineering replatform that reduced annual operating expense by 20%.",
-        "Launched single-event pay-per-view products producing more than $1M in annual revenue with no additional operating expense.",
-      ],
-    },
-    {
-      company: "Loblaw Digital",
-      role: "Product Manager",
-      period: "Dec 2020 — Apr 2022",
-      image: "assets/experience/pcid.svg",
-      imageAlt: "Illustrative PCid identity product interface",
-      theme: "Identity, experimentation, and platform products",
-      summary:
-        "Led PCid, Loblaw's unified identity and login platform serving more than one million daily users.",
-      achievements: [
-        "Introduced experimentation capabilities to support more data-driven product decisions.",
-        "Used A/B testing and cross-functional analysis to help avoid an estimated $2M in revenue loss during a security integration.",
-        "Launched single sign-on across PCid businesses while balancing shared platform needs with portfolio-specific requirements.",
-        "Used customer research to identify low public awareness of PCid and shape opportunities for stronger cross-brand experiences.",
-      ],
-    },
-    {
-      company: "Loblaw Digital",
-      role: "Intermediate Software Developer",
-      period: "Nov 2018 — Dec 2020",
-      image: "assets/experience/design-system.svg",
-      imageAlt: "Illustrative component library and design system interface",
-      theme: "Design systems and internal platforms",
-      summary:
-        "Built reusable product foundations before moving into product management.",
-      achievements: [
-        "Developed Loblaw's design system using React and Node.js.",
-        "Built internal tools using Node.js, Contentful, and Kubernetes.",
-      ],
-    },
-    {
-      company: "WhoPlusYou",
-      role: "Software Developer",
-      period: "Oct 2017 — Aug 2018",
-      image: "assets/experience/whoplusyou.svg",
-      imageAlt: "Illustrative WhoPlusYou product interface",
-      theme: "Full-stack product development",
-      summary: "Worked on the core product using Laravel and React.",
-      achievements: [],
-    },
-  ],
+  if (className) {
+    node.className = className;
+  }
 
-  caseStudies: [
-    {
-      index: "",
-      title: "Launching trust capabilities for a new digital bank",
-      category: "Fintech · 0→1 platform",
-      challenge:
-        "A new bank needed compliant, scalable foundations for fraud, AML, customer documentation, internal servicing, and performance measurement before and after launch.",
-      approach:
-        "Defined platform capabilities across risk, operations, engineering, legal, compliance, and analytics; sequenced work around launch-critical customer journeys; and created measurable operating controls.",
-      outcome:
-        "Improved risk coverage, reduced manual review, enabled compliant communications, equipped support agents with integrated tooling, and established an end-to-end KPI framework.",
-      note: "",
-    },
-    {
-      index: "",
-      title: "Building a new monetization engine for live sports",
-      category: "Streaming · Revenue",
-      challenge:
-        "Sportsnet+ needed a scalable way to monetize premium live audiences beyond subscriptions without compromising the viewing experience.",
-      approach:
-        "Led the product work for an in-stream advertising platform, aligning video engineering, ad technology, commercial teams, operations, analytics, and customer experience.",
-      outcome:
-        "Created a new monetization channel generating more than $10M in annual revenue.",
-      note: "",
-    },
-    {
-      index: "",
-      title: "Turning streaming reliability into a growth lever",
-      category: "Streaming · Retention",
-      challenge:
-        "Playback friction was creating user exits, support demand, dissatisfaction, and churn across a live streaming product.",
-      approach:
-        "Led a focused six-month program using quality telemetry, customer behaviour, engineering diagnostics, and prioritized remediation to improve the end-to-end viewing experience.",
-      outcome:
-        "Improved quality metrics by 48%, increased NPS by 10%, and reduced subscriber churn by 21%.",
-      note: "",
-    },
-    {
-      index: "",
-      title: "Scaling identity across a national retail ecosystem",
-      category: "Identity · Platform",
-      challenge:
-        "A shared identity platform had to support more than one million daily users while balancing security, conversion, and the needs of multiple Loblaw businesses.",
-      approach:
-        "Introduced experimentation, aligned portfolio stakeholders, scoped shared and business-specific requirements, and led delivery of single sign-on capabilities.",
-      outcome:
-        "Enabled cross-business authentication and used experimentation to help avoid an estimated $2M in revenue loss during a security integration.",
-      note: "",
-    },
-  ],
-
-  capabilities: [
-    "Product strategy",
-    "0→1 product development",
-    "Technical product management",
-    "Platform products",
-    "Fintech and banking",
-    "Fraud and AML",
-    "Product analytics and KPIs",
-    "Experimentation",
-    "Growth and monetization",
-    "OTT and live streaming",
-    "Identity and authentication",
-    "Generative AI workflows",
-    "Cross-functional leadership",
-    "Lunch",
-    "Deep baseball knowledge",
-    "Has a cute puppy",
-  ],
-
-  education: [
-    { degree: "Master of Arts in Psychology", school: "New York University" },
-    { degree: "Bachelor of Science in Psychology", school: "Western University" },
-  ],
+  node.innerHTML = html;
+  return node;
 };
+
+function renderProfile() {
+  $("#hero-eyebrow").textContent = content.intro.eyebrow;
+  $("#hero-name").textContent = content.profile.name;
+  $("#hero-title").textContent = content.profile.title;
+  $("#hero-tagline").textContent = content.profile.tagline;
+  $("#hero-summary").textContent = content.intro.summary;
+  $("#availability").textContent = content.profile.availability;
+  $("#location").textContent = content.profile.location;
+
+  const linkedIn = $("#linkedin-button");
+  linkedIn.href = content.profile.linkedin;
+
+  if (content.profile.resumeUrl) {
+    const resume = $("#resume-button");
+    resume.href = content.profile.resumeUrl;
+    resume.classList.remove("hidden");
+  }
+
+  const email = $("#email-link");
+  email.textContent = content.profile.email;
+  email.href = `mailto:${content.profile.email}`;
+
+  if (content.profile.showPhone && content.profile.phone) {
+    const phone = $("#phone-link");
+    phone.textContent = content.profile.phone;
+    phone.href = `tel:${content.profile.phone.replace(/[^+\d]/g, "")}`;
+    phone.classList.remove("hidden");
+  }
+}
+
+function renderMetrics() {
+  const target = $("#metrics");
+
+  content.metrics.forEach((item) => {
+    target.appendChild(
+      el(
+        "div",
+        "metric reveal",
+        `<strong>${item.value}</strong><span>${item.label}</span>`
+      )
+    );
+  });
+}
+
+function renderCaseStudies() {
+  const target = $("#case-studies");
+
+  content.caseStudies.forEach((item) => {
+    const card = el("article", "case-card reveal");
+
+    card.innerHTML = `
+      <div class="case-top">
+        <span>${item.index}</span>
+        <span>${item.category}</span>
+      </div>
+
+      <h3>${item.title}</h3>
+
+      <div class="case-section">
+        <strong>Challenge</strong>
+        <p>${item.challenge}</p>
+      </div>
+
+      <div class="case-section">
+        <strong>Approach</strong>
+        <p>${item.approach}</p>
+      </div>
+
+      <div class="case-section">
+        <strong>Outcome</strong>
+        <p>${item.outcome}</p>
+      </div>
+
+      ${item.note ? `<p class="case-note">${item.note}</p>` : ""}
+    `;
+
+    target.appendChild(card);
+  });
+}
+
+function renderExperience() {
+  const target = $("#experience-list");
+
+  content.experience.forEach((item) => {
+    const achievements = item.achievements.length
+      ? `
+        <ul>
+          ${item.achievements
+            .map((achievement) => `<li>${achievement}</li>`)
+            .join("")}
+        </ul>
+      `
+      : "";
+
+    const productImage = item.image
+      ? `
+        <figure class="job-visual">
+          <img
+            src="${item.image}"
+            alt="${item.imageAlt || `${item.company} product interface`}"
+            loading="lazy"
+          >
+          <figcaption>${item.period}</figcaption>
+        </figure>
+      `
+      : `<div class="job-period">${item.period}</div>`;
+
+    const job = el("article", "job reveal");
+
+    job.innerHTML = `
+      ${productImage}
+
+      <div class="job-identity">
+        <h3 class="job-company">${item.company}</h3>
+        <div class="job-role">${item.role}</div>
+      </div>
+
+      <div class="job-details">
+        <p class="job-theme">${item.theme}</p>
+        <p class="job-summary">${item.summary}</p>
+        ${achievements}
+      </div>
+    `;
+
+    target.appendChild(job);
+  });
+}
+
+function renderCapabilities() {
+  const target = $("#capabilities");
+
+  content.capabilities.forEach((item) => {
+    target.appendChild(el("span", "chip", item));
+  });
+}
+
+function renderEducation() {
+  const target = $("#education");
+
+  content.education.forEach((item) => {
+    target.appendChild(
+      el(
+        "article",
+        "education-item",
+        `<h3>${item.degree}</h3><p>${item.school}</p>`
+      )
+    );
+  });
+}
+
+function enableReveal() {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    },
+    { threshold: 0.12 }
+  );
+
+  document.querySelectorAll(".reveal").forEach((node) => {
+    observer.observe(node);
+  });
+}
+
+renderProfile();
+renderMetrics();
+renderCaseStudies();
+renderExperience();
+renderCapabilities();
+renderEducation();
+
+$("#year").textContent = new Date().getFullYear();
+
+enableReveal();
