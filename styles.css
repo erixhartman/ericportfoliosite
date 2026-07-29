@@ -162,6 +162,61 @@ h1 { margin: 0; font-size: clamp(54px, 9vw, 116px); line-height: .92; }
   box-shadow: 0 14px 36px rgba(0, 0, 0, .35);
   transform: scale(1.01);
 }
+
+
+/* Experience card accent glows */
+.job {
+  position: relative;
+  isolation: isolate;
+}
+
+.job::before {
+  content: "";
+  position: absolute;
+  top: 28px;
+  left: 4%;
+  width: 300px;
+  height: 210px;
+  border-radius: 50%;
+  background: var(--job-accent, transparent);
+  filter: blur(82px);
+  opacity: .12;
+  pointer-events: none;
+  z-index: -1;
+  transition: opacity .3s ease, transform .3s ease;
+}
+
+.job:hover::before {
+  opacity: .2;
+  transform: scale(1.06);
+}
+
+.job:hover .job-visual img {
+  border-color: color-mix(in srgb, var(--job-accent, var(--accent)) 55%, transparent);
+  box-shadow:
+    0 14px 36px rgba(0, 0, 0, .35),
+    0 0 42px color-mix(in srgb, var(--job-accent, var(--accent)) 18%, transparent);
+}
+
+.job-bank {
+  --job-accent: #14b8a6;
+}
+
+.job-sportsnet {
+  --job-accent: #3b82f6;
+}
+
+.job-pcid {
+  --job-accent: #ef4444;
+}
+
+.job-loblaw {
+  --job-accent: #a855f7;
+}
+
+.job-whoplusyou {
+  --job-accent: #f97316;
+}
 .job-identity { padding-top: 2px; }
 .job-details { min-width: 0; }
 .job-company { margin: 0 0 4px; font: 700 24px/1.2 "Manrope", sans-serif; }
