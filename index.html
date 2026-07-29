@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Eric Hartman — Senior Product Manager building fintech, streaming, identity, and platform products." />
+  <meta name="theme-color" content="#0b0d10" />
+  <meta property="og:title" content="Eric Hartman — Senior Product Manager" />
+  <meta property="og:description" content="Technical product leader across fintech, streaming, identity, analytics, and AI." />
+  <meta property="og:type" content="website" />
+  <title>Eric Hartman — Senior Product Manager</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="content.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="site-header">
+    <a href="#top" class="brand" aria-label="Eric Hartman home">EH<span>.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#about">About</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero shell">
+      <div class="hero-copy reveal">
+        <p class="eyebrow" id="hero-eyebrow"></p>
+        <h1 id="hero-name"></h1>
+        <h2 id="hero-title"></h2>
+        <p class="hero-tagline" id="hero-tagline"></p>
+        <div class="hero-actions">
+          <a href="#work" class="button primary">See selected work <span>↘</span></a>
+          <a id="linkedin-button" class="button secondary" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          <a id="resume-button" class="button secondary hidden" target="_blank" rel="noreferrer">Resume ↗</a>
+        </div>
+      </div>
+      <div class="hero-aside reveal delay-1">
+        <div class="availability-dot"><span></span><p id="availability"></p></div>
+        <p id="hero-summary"></p>
+        <div class="location-row"><span>Based in</span><strong id="location"></strong></div>
+      </div>
+    </section>
+
+    <section class="metrics shell" aria-label="Career impact" id="metrics"></section>
+
+    <section class="section shell" id="work">
+      <div class="section-heading reveal">
+        <p class="kicker">Selected work</p>
+        <h2>Products that moved the business.</h2>
+        <p>Concise, public-safe case studies showing the problem, product approach, and measurable outcome.</p>
+      </div>
+      <div class="case-grid" id="case-studies"></div>
+    </section>
+
+    <section class="section shell" id="experience">
+      <div class="section-heading reveal">
+        <p class="kicker">Experience</p>
+        <h2>From engineering foundations to product leadership.</h2>
+      </div>
+      <div class="timeline" id="experience-list"></div>
+    </section>
+
+    <section class="section shell about-grid" id="about">
+      <div class="section-heading reveal">
+        <p class="kicker">How I work</p>
+        <h2>Strategy grounded in systems, customers, and measurable outcomes.</h2>
+      </div>
+      <div class="about-copy reveal delay-1">
+        <p>I’m most effective where the problem is ambiguous, the system is complex, and success requires multiple disciplines to move together.</p>
+        <p>My engineering background lets me engage deeply on architecture and delivery without losing sight of customer behaviour, commercial value, operational realities, or regulatory constraints.</p>
+        <p>I use generative AI throughout discovery, synthesis, requirements, analysis, and communication—treating it as a force multiplier while keeping judgment and accountability human.</p>
+      </div>
+    </section>
+
+    <section class="section shell">
+      <div class="section-heading reveal">
+        <p class="kicker">Capabilities</p>
+        <h2>Where I create leverage.</h2>
+      </div>
+      <div class="chips reveal" id="capabilities"></div>
+    </section>
+
+    <section class="section shell education-section">
+      <div class="section-heading reveal">
+        <p class="kicker">Education</p>
+        <h2>A behavioural lens on technical products.</h2>
+      </div>
+      <div id="education" class="education-list reveal delay-1"></div>
+    </section>
+
+    <section class="contact shell" id="contact">
+      <p class="kicker reveal">Let’s talk</p>
+      <div class="contact-grid">
+        <h2 class="reveal">Building something ambitious?</h2>
+        <div class="contact-copy reveal delay-1">
+          <p>I’m always interested in conversations about technically complex products, new platforms, and teams solving meaningful customer problems.</p>
+          <a id="email-link" class="email-link"></a>
+          <a id="phone-link" class="phone-link hidden"></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer shell">
+    <p>© <span id="year"></span> Eric Hartman</p>
+    <p>Designed for clarity, impact, and fast loading.</p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+</body>
+</html>
