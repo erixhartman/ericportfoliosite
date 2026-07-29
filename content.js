@@ -118,7 +118,7 @@ window.PORTFOLIO_CONTENT = {
         "Led the product work for an in-stream advertising platform, aligning video engineering, ad technology, commercial teams, operations, analytics, and customer experience.",
       outcome:
         "Created a new monetization channel generating more than $10M in annual revenue.",
-      note: "Publicly shareable summary based on resume-level information.",
+      note: "",
     },
     {
       index: "",
@@ -130,7 +130,7 @@ window.PORTFOLIO_CONTENT = {
         "Led a focused six-month program using quality telemetry, customer behaviour, engineering diagnostics, and prioritized remediation to improve the end-to-end viewing experience.",
       outcome:
         "Improved quality metrics by 48%, increased NPS by 10%, and reduced subscriber churn by 21%.",
-      note: "Publicly shareable summary based on resume-level information.",
+      note: "",
     },
     {
       index: "",
@@ -142,7 +142,7 @@ window.PORTFOLIO_CONTENT = {
         "Introduced experimentation, aligned portfolio stakeholders, scoped shared and business-specific requirements, and led delivery of single sign-on capabilities.",
       outcome:
         "Enabled cross-business authentication and used experimentation to help avoid an estimated $2M in revenue loss during a security integration.",
-      note: "Publicly shareable summary based on resume-level information.",
+      note: "",
     },
   ],
 
