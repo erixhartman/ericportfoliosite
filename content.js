@@ -2,7 +2,7 @@ window.PORTFOLIO_CONTENT = {
   profile: {
     name: "Eric Hartman",
     title: "Senior Product Manager",
-    tagline: "I build complex, data-driven products across fintech, streaming, identity, and platform engineering.",
+    tagline: "I simplify complex systems and turn them into measurable business outcomes.",
     location: "Toronto, Canada",
     email: "ericadamhartman@gmail.com",
     phone: "Redacted",
