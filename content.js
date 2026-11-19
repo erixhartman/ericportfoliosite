@@ -15,14 +15,14 @@ window.PORTFOLIO_CONTENT = {
   intro: {
     eyebrow: "Technical product leader · Former software engineer",
     summary:
-      "Senior Product Manager with a track record of launching ambitious 0→1 products, creating new revenue streams, reducing operating costs, and scaling systems used by millions. My backgrounds in software engineering and psychology helps me translate between customer needs, business strategy, risk, data, and technical architecture.",
+      "Senior Product Manager with a track record of launching ambitious 0→1 products, creating new revenue streams, reducing operating costs, and scaling systems used by millions. My background in software engineering and psychology helps me translate between customer needs, business strategy, risk, data, and technical architecture.",
   },
 
   metrics: [
     { value: "0→1", label: "banking and monetization launches" },
     { value: "$10M+", label: "annual revenue created" },
     { value: "350%", label: "subscriber growth" },
-    { value: "48%", label: "streaming quality improvement" },
+    { value: "48%", label: "less stream buffering" },
     { value: "20%", label: "annual Opex reduction" },
     { value: "1M+", label: "daily identity-platform users" },
       ],
@@ -39,11 +39,11 @@ window.PORTFOLIO_CONTENT = {
       summary:
         "Leading the Core Trust and Growth portfolio for the launch of a new Canadian digital bank.",
       achievements: [
-        "Launched fraud and AML platform capabilities with a cross-functional team of 12, improving risk coverage and reducing manual review.",
-        "Delivered a compliant document-generation framework supporting tax forms, account documentation, customer communications, and government reporting obligations.",
-        "Led internal support tooling that integrates with core banking systems, helping agents manage accounts more efficiently and reduce handling time.",
-        "Built the product analytics framework and KPI system for the end-to-end customer journey, enabling funnel optimization, operational monitoring, and investment decisions.",
-        "Embedded generative AI into discovery, requirements, and analysis to increase delivery capacity across a broader portfolio.",
+        "Led a cross-functional team of 12 to launch foundational banking capabilities, including fraud prevention, AML, and customer authentication.",
+        "Delivered a compliant document-generation framework supporting customer agreements, regulatory disclosures, and banking communications.",
+        "Led development of internal servicing tools integrated with core banking systems, enabling agents to manage customer accounts and operational workflows.",
+        "Built the product analytics framework and KPI measurement strategy, giving visibility into customer journeys, operational performance, and growth opportunities.",
+        "Integrated generative AI into product discovery, requirements analysis, and experimentation workflows to improve team efficiency and decision-making.",
       ],
     },
     {
@@ -58,10 +58,11 @@ window.PORTFOLIO_CONTENT = {
         "Owned product vision, roadmap, and development for Sportsnet+, a direct-to-consumer live streaming service.",
       achievements: [
         "Helped drive more than 350% subscriber growth across the service.",
-        "Led a six-month stability and performance program that improved streaming quality metrics by 48%, increased NPS by 10%, and reduced churn by 21%.",
+        "Reduced stream buffering by 48%, improved NPS by 10%, and lowered subscriber churn by 21% through a six-month stability and performance program.",
         "Launched an in-stream advertising platform generating more than $10M in annual revenue.",
-        "Redesigned the purchase flow using interviews and experimentation, increasing cart size by 39% and lifetime value by 19%.",
+        "Redesigned the purchase flow using user research and experimentation, increasing lifetime value by 19% and reducing user exits by 39%.",
         "Led a service-wide video engineering replatform that reduced annual operating expense by 20%.",
+        "Rebranded Sportsnet NOW to Sportsnet+, increasing brand recognition by 17%.",
         "Launched single-event pay-per-view products producing more than $1M in annual revenue with no additional operating expense.",
       ],
     },
@@ -116,11 +117,11 @@ window.PORTFOLIO_CONTENT = {
       title: "Launching trust capabilities for a new digital bank",
       category: "Fintech · 0→1 platform",
       challenge:
-        "A new bank needed compliant, scalable foundations for fraud, AML, customer documentation, internal servicing, and performance measurement before and after launch.",
+        "A new bank needed compliant, scalable foundations for fraud, AML, customer authentication, documentation, internal servicing, and performance measurement before and after launch.",
       approach:
         "Defined platform capabilities across risk, operations, engineering, legal, compliance, and analytics; sequenced work around launch-critical customer journeys; and created measurable operating controls.",
       outcome:
-        "Improved risk coverage, reduced manual review, enabled compliant communications, equipped support agents with integrated tooling, and established an end-to-end KPI framework.",
+        "Launched fraud prevention, AML and customer authentication with a team of 12, delivered compliant customer agreements and disclosures, gave agents servicing tools built on core banking, and established the KPI framework for the bank.",
       note: "",
     },
     {
@@ -144,7 +145,7 @@ window.PORTFOLIO_CONTENT = {
       approach:
         "Led a focused six-month program using quality telemetry, customer behaviour, engineering diagnostics, and prioritized remediation to improve the end-to-end viewing experience.",
       outcome:
-        "Improved quality metrics by 48%, increased NPS by 10%, and reduced subscriber churn by 21%.",
+        "Reduced stream buffering by 48%, increased NPS by 10%, and reduced subscriber churn by 21%.",
       note: "",
     },
     {
