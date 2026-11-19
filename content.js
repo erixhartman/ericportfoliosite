@@ -22,7 +22,7 @@ window.PORTFOLIO_CONTENT = {
     { value: "0→1", label: "banking and monetization launches" },
     { value: "$10M+", label: "annual revenue created" },
     { value: "350%", label: "subscriber growth" },
-    { value: "48%", label: "less stream buffering" },
+    { value: "48%", label: "streaming quality improvement" },
     { value: "20%", label: "annual Opex reduction" },
     { value: "1M+", label: "daily identity-platform users" },
       ],
@@ -58,7 +58,7 @@ window.PORTFOLIO_CONTENT = {
         "Owned product vision, roadmap, and development for Sportsnet+, a direct-to-consumer live streaming service.",
       achievements: [
         "Helped drive more than 350% subscriber growth across the service.",
-        "Reduced stream buffering by 48%, improved NPS by 10%, and lowered subscriber churn by 21% through a six-month stability and performance program.",
+        "Led a six-month stability and performance program that improved streaming quality metrics by 48%, increased NPS by 10%, and reduced churn by 21%.",
         "Launched an in-stream advertising platform generating more than $10M in annual revenue.",
         "Redesigned the purchase flow using user research and experimentation, increasing lifetime value by 19% and reducing user exits by 39%.",
         "Led a service-wide video engineering replatform that reduced annual operating expense by 20%.",
@@ -145,7 +145,7 @@ window.PORTFOLIO_CONTENT = {
       approach:
         "Led a focused six-month program using quality telemetry, customer behaviour, engineering diagnostics, and prioritized remediation to improve the end-to-end viewing experience.",
       outcome:
-        "Reduced stream buffering by 48%, increased NPS by 10%, and reduced subscriber churn by 21%.",
+        "Improved quality metrics by 48%, increased NPS by 10%, and reduced subscriber churn by 21%.",
       note: "",
     },
     {
