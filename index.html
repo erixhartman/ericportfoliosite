@@ -23,6 +23,7 @@
     <a href="#top" class="brand" aria-label="Eric Hartman home">EH<span>.</span></a>
     <nav aria-label="Main navigation">
       <a href="#work">Work</a>
+      <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
       <a href="#about">About</a>
       <a href="#personality">Beyond work</a>
@@ -58,6 +59,70 @@
         <h2>Work I'm proud of</h2>
       </div>
       <div class="case-grid" id="case-studies"></div>
+    </section>
+
+    <section class="section shell" id="projects">
+      <div class="section-heading reveal">
+        <p class="kicker">Projects</p>
+        <h2>Small products I built for my own life.</h2>
+        <p>Built after hours with Claude as my pair programmer. Each one is live, and the code is on GitHub.</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <div class="case-top"><span>Personal tool</span><span>Android web app</span></div>
+          <h3>Donna Walks</h3>
+          <p class="project-line">A walk log for my leash-reactive Lab. One tap logs a reaction, a pee or a poo, with GPS distance and a trend of reactions per kilometre.</p>
+          <div class="case-section">
+            <strong>Problem</strong>
+            <p>Our trainer and vet kept asking how often she reacts, how close, and whether it's improving. I was answering from memory.</p>
+          </div>
+          <div class="case-section">
+            <strong>Key decision</strong>
+            <p>No backend. Data stays on my phone so logging works on trails with no signal. Reactions per km is the headline metric, so long walks don't look like bad weeks.</p>
+          </div>
+          <div class="project-links">
+            <a class="button primary" href="https://donna-walks.vercel.app/?demo" target="_blank" rel="noreferrer">Try the demo ↗</a>
+            <a class="button secondary" href="https://github.com/erixhartman/donna-walks" target="_blank" rel="noreferrer">Code ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="case-top"><span>Sports data</span><span>Refreshed daily</span></div>
+          <h3>That's ball, baby!</h3>
+          <p class="project-line">MLB leaderboards rebuilt every morning: the top 50 hitters and pitchers, plus which big contracts are paying off.</p>
+          <div class="case-section">
+            <strong>Problem</strong>
+            <p>A stats site I built with a friend had gone unmaintained, and I wanted the leaderboards back in a cleaner form.</p>
+          </div>
+          <div class="case-section">
+            <strong>Key decision</strong>
+            <p>I calculate wRC+, FIP and contract value myself from MLB's free data instead of scraping sites whose terms don't allow it. A scheduled job rebuilds it all daily.</p>
+          </div>
+          <div class="project-links">
+            <a class="button primary" href="https://thatsball.vercel.app" target="_blank" rel="noreferrer">Open the site ↗</a>
+            <a class="button secondary" href="https://github.com/erixhartman/thatsball" target="_blank" rel="noreferrer">Code ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="case-top"><span>Personal OKRs</span><span>FY2027</span></div>
+          <h3>Eric Hartman Inc.</h3>
+          <p class="project-line">My personal goals, tracked in public: run the Toronto Half Marathon and finish 12 borrowed books by Jays Opening Day.</p>
+          <div class="case-section">
+            <strong>Problem</strong>
+            <p>I posted the goals on LinkedIn and promised shareholders public accountability, including where I fall short.</p>
+          </div>
+          <div class="case-section">
+            <strong>Key decision</strong>
+            <p>No database. Every update I make is a commit to the repo, so anyone can read it, only I can change it, and the history doubles as an audit log.</p>
+          </div>
+          <div class="project-links">
+            <a class="button primary" href="https://eric-hartman-inc.vercel.app" target="_blank" rel="noreferrer">See progress ↗</a>
+            <a class="button secondary" href="https://github.com/erixhartman/eric-hartman-inc" target="_blank" rel="noreferrer">Code ↗</a>
+          </div>
+        </article>
+      </div>
     </section>
 
     <section class="section shell" id="experience">
