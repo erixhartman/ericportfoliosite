@@ -1,11 +1,57 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200" role="img" aria-label="PCid product image placeholder">
-<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1d1622"/><stop offset="1" stop-color="#0d0910"/></linearGradient><radialGradient id="r"><stop stop-color="#ed4fc6" stop-opacity=".32"/><stop offset="1" stop-color="#ed4fc6" stop-opacity="0"/></radialGradient></defs>
-<rect width="1600" height="1200" rx="56" fill="url(#g)"/>
-<circle cx="1320" cy="210" r="360" fill="url(#r)"/>
-<rect x="105" y="105" width="1390" height="990" rx="38" fill="#151019" stroke="#ffffff" stroke-opacity=".14" stroke-width="4"/>
-<rect x="105" y="105" width="1390" height="110" rx="38" fill="#201827"/><circle cx="175" cy="160" r="15" fill="#ed4fc6"/><circle cx="225" cy="160" r="15" fill="#b66cff"/><circle cx="275" cy="160" r="15" fill="#ffffff" fill-opacity=".28"/>
-<text x="135" y="350" fill="#ed4fc6" font-family="Arial, sans-serif" font-size="40" font-weight="700" letter-spacing="8">PCid</text>
-<text x="135" y="470" fill="#f8f2f7" font-family="Arial, sans-serif" font-size="88" font-weight="700">Sign in</text>
-<text x="135" y="545" fill="#b0a3ae" font-family="Arial, sans-serif" font-size="40">Unified identity platform</text>
-<rect x="135" y="650" width="520" height="270" rx="28" fill="#211827" stroke="#ffffff" stroke-opacity=".1"/><rect x="700" y="650" width="655" height="72" rx="20" fill="#2b2032"/><rect x="700" y="755" width="560" height="38" rx="19" fill="#ffffff" fill-opacity=".13"/><rect x="700" y="825" width="610" height="38" rx="19" fill="#ffffff" fill-opacity=".09"/><rect x="700" y="895" width="410" height="38" rx="19" fill="#ed4fc6" fill-opacity=".55"/>
-</svg>
+# Eric Hartman, Senior Product Manager
+
+My portfolio site, styled like a sports player page: a bio and career bests up top, then tabs for my work, case studies, side projects and background.
+
+**Live:** [eric-hartman-portfolio.vercel.app](https://eric-hartman-portfolio.vercel.app/)
+
+Each tab has its own link, so you can send someone straight to one:
+
+- [Work](https://eric-hartman-portfolio.vercel.app/#work): roles, stats and a career timeline
+- [Highlights](https://eric-hartman-portfolio.vercel.app/#highlights): four case studies, from problem to result
+- [Projects](https://eric-hartman-portfolio.vercel.app/#projects): side projects I built with Claude
+- [About](https://eric-hartman-portfolio.vercel.app/#about): bio, interests, education and contact
+
+## What's in here
+
+| File | What it is |
+|---|---|
+| `index.html` | All the content. Each tab is a `<section>` with an id that matches its tab: `work`, `highlights`, `projects`, `about`. |
+| `styles.css` | The whole look, including the tablet and phone layouts at the bottom. |
+| `script.js` | Switches tabs based on the link's `#hash`. Without JavaScript, every section shows in order. |
+| `assets/eric-donna.jpg` | The header photo. |
+| `Eric-Hartman-Resume.pdf` | The resume linked from the header and the About tab. |
+| `favicon.svg`, `favicon.png`, `apple-touch-icon.png` | The home plate icon, plus fallbacks for older browsers and phone home screens. |
+
+It's plain HTML, CSS and a little JavaScript. There's no build step and nothing to install.
+
+## Making changes
+
+- **Update copy:** edit the text in `index.html` directly. Search for the section id (for example `id="highlights"`) to find the right tab.
+- **Swap the resume:** replace `Eric-Hartman-Resume.pdf` and keep the same file name, so the links keep working.
+- **Change the photo:** replace `assets/eric-donna.jpg`. Keep it roughly 3:4 portrait; it's cropped to fit.
+- **Add a role or project:** copy an existing `.row` (Work) or `.project` (Projects) block and edit it. The layout and zebra striping adjust on their own.
+
+## Running it locally
+
+Open `index.html` in a browser, or serve the folder so the tab links behave exactly as they do live:
+
+```sh
+python3 -m http.server 8000
+```
+
+Then go to http://localhost:8000.
+
+## Deploying
+
+Vercel deploys every push to `main`. Changes are live in about a minute.
+
+## Design notes
+
+- The reference is a sports broadcaster's player page: a navy masthead, condensed type for names and numbers, plain tables underneath.
+- Colours are navy `#0a1a33` with one red accent, `#c8102e`. They're generic sports colours, not any team's palette.
+- Type is [Barlow Condensed](https://fonts.google.com/specimen/Barlow+Condensed) for headings and numbers, and [Barlow](https://fonts.google.com/specimen/Barlow) for body text, both from Google Fonts.
+- Product stats are split from engineering stats the way baseball splits hitters from pitchers, so every role shows only the numbers that mattered there.
+
+## Credits
+
+Designed and built with Claude.
