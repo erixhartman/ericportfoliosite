@@ -3,218 +3,275 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Eric Hartman — Senior Product Manager building fintech, streaming, identity, and platform products." />
-  <meta name="theme-color" content="#0b0d10" />
-  <meta property="og:title" content="Eric Hartman — Senior Product Manager" />
-  <meta property="og:description" content="Technical product leader across fintech, streaming, identity, analytics, and AI." />
+  <meta name="description" content="Eric Hartman, Senior Product Manager in Toronto. Fintech, streaming, identity and platform products." />
+  <meta name="theme-color" content="#0a1a33" />
+  <meta property="og:title" content="Eric Hartman, Senior Product Manager" />
+  <meta property="og:description" content="Developer turned product manager. Sportsnet+, PCid at Loblaw Digital, and now a new Canadian digital bank at Haventree." />
   <meta property="og:type" content="website" />
-  <title>Eric Hartman — Senior Product Manager</title>
+  <meta property="og:image" content="assets/eric-donna.jpg" />
+  <title>Eric Hartman, Senior Product Manager</title>
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
-  <script src="content.js" defer></script>
   <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="noise"></div>
-  <header class="site-header">
-    <a href="#top" class="brand" aria-label="Eric Hartman home">EH<span>.</span></a>
-    <nav aria-label="Main navigation">
-      <a href="#work">Work</a>
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#about">About</a>
-      <a href="#personality">Beyond work</a>
-      <a href="#contact" class="nav-cta">Contact</a>
-    </nav>
-  </header>
+  <header class="masthead">
+    <div class="topbar shell">
+      <a href="#work" class="brand">Eric Hartman</a>
+      <nav aria-label="Main">
+        <a href="#work" data-tab-link="work">Work</a>
+        <a href="#projects" data-tab-link="projects">Projects</a>
+        <a href="#about" data-tab-link="about">About</a>
+        <a href="Eric-Hartman-Resume.pdf">Resume (PDF)</a>
+      </nav>
+    </div>
 
-  <main id="top">
-    <section class="hero shell">
-      <div class="hero-copy reveal">
-        <p class="eyebrow" id="hero-eyebrow"></p>
-        <h1 id="hero-name"></h1>
-        <h2 id="hero-title"></h2>
-        <p class="hero-tagline" id="hero-tagline"></p>
-        <div class="hero-actions">
-          <a href="#work" class="button primary">See selected work <span>↘</span></a>
-          <a id="linkedin-button" class="button secondary" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-          <a id="resume-button" class="button secondary hidden" target="_blank" rel="noreferrer">Resume ↗</a>
+    <div class="bio shell">
+      <div class="photo">
+        <img src="assets/eric-donna.jpg" width="560" height="746" alt="Eric with his black Lab, Donna" />
+      </div>
+      <div class="bio-main">
+        <h1>Eric<br />Hartman</h1>
+        <dl class="facts">
+          <div><dt>Position</dt><dd>Senior Product Manager</dd></div>
+          <div><dt>Current team</dt><dd>Haventree Bank, since June 2025</dd></div>
+          <div><dt>Debut</dt><dd>October 2017, as a developer at WhoPlusYou</dd></div>
+          <div><dt>Background</dt><dd>software engineering and psychology</dd></div>
+          <div><dt>Home</dt><dd>Toronto</dd></div>
+        </dl>
+        <div class="actions">
+          <a class="btn btn-red" href="mailto:ericadamhartman@gmail.com">Email</a>
+          <a class="btn" href="https://www.linkedin.com/in/ericadamhartman">LinkedIn</a>
+          <a class="btn" href="Eric-Hartman-Resume.pdf">Resume (PDF)</a>
         </div>
       </div>
-      <div class="hero-aside reveal delay-1">
-        <div class="availability-dot"><span></span><p id="availability"></p></div>
-        <p id="hero-summary"></p>
-        <div class="location-row"><span>Based in</span><strong id="location"></strong></div>
+      <section class="bests" aria-labelledby="bests-title">
+        <h2 id="bests-title">Career bests</h2>
+        <ul>
+          <li><strong>$10M+</strong><span>new ad revenue a year, <em>Sportsnet+</em></span></li>
+          <li><strong>+350%</strong><span>subscriber growth, <em>Sportsnet+</em></span></li>
+          <li><strong>1M+</strong><span>daily users on one login, <em>PCid</em></span></li>
+          <li><strong>0 to 1</strong><span>a new Canadian digital bank, <em>Haventree</em></span></li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="tabbar">
+      <nav class="tabs shell" aria-label="Sections">
+        <a href="#work" data-tab-link="work">Work</a>
+        <a href="#highlights" data-tab-link="highlights">Highlights</a>
+        <a href="#projects" data-tab-link="projects">Projects</a>
+        <a href="#about" data-tab-link="about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="shell">
+
+    <!-- WORK -->
+    <section class="panel" id="work" data-tab="work" aria-label="Work">
+      <div class="sec-head"><h2>Product stats</h2><p>Each role shows the numbers that mattered there.</p></div>
+      <div class="rows">
+        <div class="row">
+          <span class="when">2025 to now</span>
+          <span class="who"><strong>Haventree Bank</strong><span>Senior PM</span></span>
+          <div class="what">
+            <p class="lead">Leading Core Trust and Growth for the launch of a new Canadian digital bank.</p>
+            <p>Launched fraud prevention, AML and customer authentication with a cross-functional team of 12. Also delivered a compliant document-generation framework, agent servicing tools on core banking, and the bank's KPI framework.</p>
+          </div>
+        </div>
+        <div class="row">
+          <span class="when">2022 to 2025</span>
+          <span class="who"><strong>Sportsnet+</strong><span>PM</span></span>
+          <div class="what">
+            <ul class="statline">
+              <li><strong>$10M+</strong> ad revenue a year</li>
+              <li><strong>$1M+</strong> pay-per-view revenue</li>
+              <li><strong>+350%</strong> subscribers</li>
+              <li><strong>+48%</strong> streaming quality metrics</li>
+              <li><strong>−21%</strong> churn</li>
+              <li><strong>−20%</strong> operating expense</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <span class="when">2020 to 2022</span>
+          <span class="who"><strong>Loblaw Digital, PCid</strong><span>PM</span></span>
+          <div class="what">
+            <ul class="statline">
+              <li><strong>1M+</strong> daily users</li>
+              <li><strong>$2M</strong> revenue loss avoided (est.)</li>
+            </ul>
+            <p class="also">Also: single sign-on across PCid businesses, and the team's first experimentation tools.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sec-head"><h2>Engineering stats</h2><p>Two-way player: before product, I built things.</p></div>
+      <div class="rows">
+        <div class="row">
+          <span class="when">2018 to 2020</span>
+          <span class="who"><strong>Loblaw Digital</strong><span>Developer</span></span>
+          <div class="what"><p>Built the design system in React and Node.js, plus internal tools on Contentful and Kubernetes.</p></div>
+        </div>
+        <div class="row">
+          <span class="when">2017 to 2018</span>
+          <span class="who"><strong>WhoPlusYou</strong><span>Developer</span></span>
+          <div class="what"><p>Worked on the core product in Laravel and React.</p></div>
+        </div>
+      </div>
+
+      <div class="split">
+        <div>
+          <div class="sec-head"><h2>Transactions</h2></div>
+          <ol class="transactions">
+            <li><strong>June 2025</strong><span>Signed by Haventree Bank to help launch a new Canadian digital bank. Leads the Core Trust and Growth portfolio.</span></li>
+            <li><strong>April 2022</strong><span>Signed by Sportsnet. Owned product for Sportsnet+ through the rebrand from Sportsnet NOW.</span></li>
+            <li><strong>December 2020</strong><span>Converted from developer to product manager at Loblaw Digital. Took over PCid.</span></li>
+            <li><strong>November 2018</strong><span>Signed by Loblaw Digital as a developer.</span></li>
+            <li><strong>October 2017</strong><span>Debut with WhoPlusYou.</span></li>
+          </ol>
+        </div>
+        <div>
+          <div class="sec-head"><h2>Off the field</h2></div>
+          <ul class="plain">
+            <li><a href="https://eric-hartman-inc.vercel.app">Eric Hartman Inc.</a> Public tracker for my half marathon and 12-book goal.</li>
+            <li><a href="https://thatsball.vercel.app">That's ball, baby!</a> MLB player value dashboard.</li>
+            <li><a href="https://donna-walks.vercel.app/?demo">Donna Walks</a> Walk log for my reactive Lab.</li>
+          </ul>
+          <div class="sec-head"><h2>About</h2></div>
+          <p class="body">I simplify complex systems and turn them into measurable business outcomes. Engineering taught me how things get built; psychology taught me why people use them.</p>
+        </div>
       </div>
     </section>
 
-    <section class="metrics shell" aria-label="Career impact" id="metrics"></section>
-
-    <section class="section shell" id="work">
-      <div class="section-heading reveal">
-        <p class="kicker">Selected work</p>
-        <h2>Work I'm proud of</h2>
-      </div>
-      <div class="case-grid" id="case-studies"></div>
-    </section>
-
-    <section class="section shell" id="projects">
-      <div class="section-heading reveal">
-        <p class="kicker">Projects</p>
-        <h2>Small products I built for my own life.</h2>
-        <p>Built after hours with Claude as my pair programmer. Each one is live, and the code is on GitHub.</p>
-      </div>
-
-      <div class="project-grid">
-        <article class="project-card reveal">
-          <div class="case-top"><span>Personal tool</span><span>Android web app</span></div>
-          <h3>Donna Walks</h3>
-          <p class="project-line">A walk log for my leash-reactive Lab. One tap logs a reaction, a pee or a poo, with GPS distance and a trend of reactions per kilometre.</p>
-          <div class="case-section">
-            <strong>Problem</strong>
-            <p>Our trainer and vet kept asking how often she reacts, how close, and whether it's improving. I was answering from memory.</p>
-          </div>
-          <div class="case-section">
-            <strong>Key decision</strong>
-            <p>No backend. Data stays on my phone so logging works on trails with no signal. Reactions per km is the headline metric, so long walks don't look like bad weeks.</p>
-          </div>
-          <div class="project-links">
-            <a class="button primary" href="https://donna-walks.vercel.app/?demo" target="_blank" rel="noreferrer">Try the demo ↗</a>
-            <a class="button secondary" href="https://github.com/erixhartman/donna-walks" target="_blank" rel="noreferrer">Code ↗</a>
+    <!-- HIGHLIGHTS -->
+    <section class="panel" id="highlights" data-tab="highlights" aria-label="Highlights">
+      <div class="sec-head"><h2>Highlights</h2><p>Four projects, from problem to result.</p></div>
+      <div class="rows">
+        <article class="case">
+          <header><h3>Launching trust capabilities for a new digital bank</h3><span>Haventree Bank, 2025 to now</span></header>
+          <div class="cols">
+            <div><h4>Challenge</h4><p>A new bank needed compliant, scalable foundations for fraud, AML, customer authentication, documentation, internal servicing and performance measurement, before and after launch.</p></div>
+            <div><h4>Approach</h4><p>Defined platform capabilities across risk, operations, engineering, legal, compliance and analytics. Sequenced the work around launch-critical customer journeys and built measurable operating controls.</p></div>
+            <div><h4>Result</h4><p class="result">Fraud prevention, AML and customer authentication launched with a team of 12, plus a compliant document-generation framework, agent servicing tools and the bank's KPI framework.</p></div>
           </div>
         </article>
-
-        <article class="project-card reveal">
-          <div class="case-top"><span>Sports data</span><span>Refreshed daily</span></div>
-          <h3>That's ball, baby!</h3>
-          <p class="project-line">MLB leaderboards rebuilt every morning: the top 50 hitters and pitchers, plus which big contracts are paying off.</p>
-          <div class="case-section">
-            <strong>Problem</strong>
-            <p>A stats site I built with a friend had gone unmaintained, and I wanted the leaderboards back in a cleaner form.</p>
-          </div>
-          <div class="case-section">
-            <strong>Key decision</strong>
-            <p>I calculate wRC+, FIP and contract value myself from MLB's free data instead of scraping sites whose terms don't allow it. A scheduled job rebuilds it all daily.</p>
-          </div>
-          <div class="project-links">
-            <a class="button primary" href="https://thatsball.vercel.app" target="_blank" rel="noreferrer">Open the site ↗</a>
-            <a class="button secondary" href="https://github.com/erixhartman/thatsball" target="_blank" rel="noreferrer">Code ↗</a>
+        <article class="case">
+          <header><h3>Building a new monetization engine for live sports</h3><span>Sportsnet+, 2022 to 2025</span></header>
+          <div class="cols">
+            <div><h4>Challenge</h4><p>Sportsnet+ needed a scalable way to make money from premium live audiences beyond subscriptions, without hurting the viewing experience.</p></div>
+            <div><h4>Approach</h4><p>Led the product work for an in-stream ad platform, aligning video engineering, ad tech, commercial, operations, analytics and customer experience.</p></div>
+            <div><h4>Result</h4><p class="result">A new revenue channel generating more than $10M a year.</p></div>
           </div>
         </article>
-
-        <article class="project-card reveal">
-          <div class="case-top"><span>Personal OKRs</span><span>FY2027</span></div>
-          <h3>Eric Hartman Inc.</h3>
-          <p class="project-line">My personal goals, tracked in public: run the Toronto Half Marathon and finish 12 borrowed books by Jays Opening Day.</p>
-          <div class="case-section">
-            <strong>Problem</strong>
-            <p>I posted the goals on LinkedIn and promised shareholders public accountability, including where I fall short.</p>
+        <article class="case">
+          <header><h3>Turning streaming reliability into a growth lever</h3><span>Sportsnet+, 2022 to 2025</span></header>
+          <div class="cols">
+            <div><h4>Challenge</h4><p>Playback friction was driving user exits, support demand, dissatisfaction and churn.</p></div>
+            <div><h4>Approach</h4><p>A focused six-month program using quality telemetry, customer behaviour, engineering diagnostics and prioritized fixes across the viewing experience.</p></div>
+            <div><h4>Result</h4><p class="result">Streaming quality metrics up 48%, NPS up 10%, churn down 21%.</p></div>
           </div>
-          <div class="case-section">
-            <strong>Key decision</strong>
-            <p>No database. Every update I make is a commit to the repo, so anyone can read it, only I can change it, and the history doubles as an audit log.</p>
-          </div>
-          <div class="project-links">
-            <a class="button primary" href="https://eric-hartman-inc.vercel.app" target="_blank" rel="noreferrer">See progress ↗</a>
-            <a class="button secondary" href="https://github.com/erixhartman/eric-hartman-inc" target="_blank" rel="noreferrer">Code ↗</a>
+        </article>
+        <article class="case">
+          <header><h3>Scaling identity across a national retail ecosystem</h3><span>Loblaw Digital, PCid, 2020 to 2022</span></header>
+          <div class="cols">
+            <div><h4>Challenge</h4><p>One identity platform had to serve more than a million daily users while balancing security, conversion and the needs of several Loblaw businesses.</p></div>
+            <div><h4>Approach</h4><p>Introduced experimentation, aligned portfolio stakeholders, scoped shared and business-specific requirements, and led delivery of single sign-on.</p></div>
+            <div><h4>Result</h4><p class="result">Single sign-on across PCid businesses, and experiments that helped avoid an estimated $2M in revenue loss during a security integration.</p></div>
           </div>
         </article>
       </div>
     </section>
 
-    <section class="section shell" id="experience">
-      <div class="section-heading reveal">
-        <p class="kicker">Experience</p>
-        <h2>From engineering foundations to product leadership.</h2>
+    <!-- PROJECTS -->
+    <section class="panel" id="projects" data-tab="projects" aria-label="Projects">
+      <div class="sec-head"><h2>Projects</h2><p>Built in my spare time with Claude. I made the product calls; Claude wrote most of the code.</p></div>
+      <div class="rows">
+        <article class="project">
+          <div class="p-name">
+            <h3><a href="https://eric-hartman-inc.vercel.app">Eric Hartman Inc.</a></h3>
+            <span>React, TypeScript, Vite, GitHub API, Vercel</span>
+            <span class="p-links"><a href="https://eric-hartman-inc.vercel.app">Open the site</a><a href="https://github.com/erixhartman/eric-hartman-inc">Code on GitHub</a></span>
+          </div>
+          <div><h4>What it does</h4><p>A public tracker for my FY2027 goals: the Toronto Half Marathon in May and 12 borrowed books by Jays Opening Day. Anyone can watch; only I can update it.</p></div>
+          <div><h4>How it works</h4><p>No backend. The owner page saves each update as a commit to GitHub, which redeploys the site. Includes a 28-day activity strip and a week-by-week season record.</p></div>
+        </article>
+        <article class="project">
+          <div class="p-name">
+            <h3><a href="https://thatsball.vercel.app">That's ball, baby!</a></h3>
+            <span>React, TypeScript, Vite, GitHub Actions, Vercel</span>
+            <span class="p-links"><a href="https://thatsball.vercel.app">Open the site</a><a href="https://github.com/erixhartman/thatsball">Code on GitHub</a></span>
+          </div>
+          <div><h4>What it does</h4><p>MLB dashboard of the top 50 hitters and pitchers, with contract values next to on-field value. Rebuilt from scratch after a friend and I first made it together.</p></div>
+          <div><h4>How it works</h4><p>Pulls from the MLB Stats API and Baseball Savant every morning through a scheduled GitHub Action. wOBA, wRC+ and FIP are calculated in the app.</p></div>
+        </article>
+        <article class="project">
+          <div class="p-name">
+            <h3><a href="https://donna-walks.vercel.app/?demo">Donna Walks</a></h3>
+            <span>React, TypeScript, Vite, Vercel</span>
+            <span class="p-links"><a href="https://donna-walks.vercel.app/?demo">Open the site</a><a href="https://github.com/erixhartman/donna-walks">Code on GitHub</a></span>
+          </div>
+          <div><h4>What it does</h4><p>A walk log for Donna, my reactive Lab: distance and bathroom breaks for each walk. Built for my Android phone.</p></div>
+          <div><h4>How it works</h4><p>A small mobile web app, deliberately simple, with no AI features.</p></div>
+        </article>
       </div>
-      <div class="timeline" id="experience-list"></div>
+      <aside class="why">
+        <h3>Why build these?</h3>
+        <p>I wanted to know what it takes to ship something real with AI tools, beyond a prototype. Each one is small, live and something I use.</p>
+      </aside>
     </section>
 
-    <section class="section shell about-grid" id="about">
-      <div class="section-heading reveal">
-        <p class="kicker">How I work</p>
-        <h2>Strategy grounded in systems, customers, and measurable outcomes.</h2>
-      </div>
-      <div class="about-copy reveal delay-1">
-        <p>I’m most effective where the problem is ambiguous, the system is complex, and success requires multiple disciplines to move together.</p>
-        <p>My engineering background means I can dive into technical decisions without losing sight of customers, business goals, or operational reality.</p>
-        <p>I use generative AI throughout discovery, synthesis, requirements, analysis, and communication—treating it as a force multiplier while keeping judgment and accountability human.</p>
-      </div>
-    </section>
+    <!-- ABOUT -->
+    <section class="panel" id="about" data-tab="about" aria-label="About">
+      <div class="about">
+        <div>
+          <div class="sec-head"><h2>About</h2></div>
+          <p class="body">I'm a product manager in Toronto. I started out writing code, first at WhoPlusYou and then on Loblaw's design system, and moved into product in 2020.</p>
+          <p class="body">Since then I've worked on the login behind Loblaw's apps, on Sportsnet+, and now on the trust side of a new Canadian bank. The common thread is taking something complicated and getting it to a place where a team can ship it and measure it.</p>
+          <p class="body">I also studied psychology, and between that and engineering I can translate between customers, risk, data and the people building the thing. Outside work I'm training for the Toronto Half, working through a stack of borrowed books, and walking Donna, who is in the photo.</p>
 
-    <section class="section shell">
-      <div class="section-heading reveal">
-        <p class="kicker">Capabilities</p>
-        <h2>Where I create leverage.</h2>
-      </div>
-      <div class="chips reveal" id="capabilities"></div>
-    </section>
+          <div class="sec-head"><h2>Off the field</h2></div>
+          <dl class="offfield">
+            <div><dt>Baseball</dt><dd>I'm a lifelong baseball fan who enjoys the combination of strategy, probability, player development, and unpredictability.</dd></div>
+            <div><dt>Learning ASL</dt><dd>I'm learning American Sign Language as an ongoing personal challenge and a way to communicate more inclusively.</dd></div>
+            <div><dt>Guide dog volunteering</dt><dd>I volunteer with CNIB Guide Dogs, helping raise and socialize future guide dogs as they prepare for formal training.</dd></div>
+          </dl>
 
-<section class="section shell personality-section" id="personality">
-  <div class="section-heading reveal">
-    <p class="kicker">Beyond work</p>
-    <h2>Curious by nature, usually learning something new.</h2>
-    <p>A few of the interests and commitments that shape how I spend my time outside product work.</p>
-  </div>
+          <div class="sec-head"><h2>Education</h2></div>
+          <ul class="plain">
+            <li><strong>Master of Arts, Psychology.</strong> New York University</li>
+            <li><strong>Bachelor of Science, Psychology.</strong> Western University</li>
+          </ul>
 
-  <div class="personality-grid">
-    <article class="personality-card reveal">
-      <span class="personality-icon" aria-hidden="true">⚾</span>
-      <h3>Baseball</h3>
-      <p>
-        I’m a lifelong baseball fan who enjoys the combination of strategy,
-        probability, player development, and unpredictability.
-      </p>
-    </article>
-
-    <article class="personality-card reveal">
-      <span class="personality-icon" aria-hidden="true">🤟</span>
-      <h3>Learning ASL</h3>
-      <p>
-        I’m learning American Sign Language as an ongoing personal challenge
-        and a way to communicate more inclusively.
-      </p>
-    </article>
-
-    <article class="personality-card reveal">
-      <span class="personality-icon" aria-hidden="true">🐕</span>
-      <h3>Guide dog volunteering</h3>
-      <p>
-        I volunteer with CNIB Guide Dogs, helping raise and socialize future
-        guide dogs as they prepare for formal training. 
-      </p>
-    </article>
-  </div>
-</section>
-    
-    <section class="section shell education-section">
-      <div class="section-heading reveal">
-        <p class="kicker">Education</p>
-        <h2>A behavioural lens on technical products.</h2>
-      </div>
-      <div id="education" class="education-list reveal delay-1"></div>
-    </section>
-
-    <section class="contact shell" id="contact">
-      <p class="kicker reveal">Let’s talk</p>
-      <div class="contact-grid">
-        <h2 class="reveal">Building something ambitious?</h2>
-        <div class="contact-copy reveal delay-1">
-          <p>Have an interesting product problem? I'd love to chat.</p>
-          <a id="email-link" class="email-link"></a>
-          <a id="phone-link" class="phone-link hidden"></a>
+          <div class="sec-head"><h2>Get in touch</h2></div>
+          <p class="body">The best way to reach me is <a href="mailto:ericadamhartman@gmail.com"><strong>ericadamhartman@gmail.com</strong></a>. I'm also on <a href="https://www.linkedin.com/in/ericadamhartman">LinkedIn</a>, and my full <a href="Eric-Hartman-Resume.pdf">resume is a PDF</a>.</p>
+        </div>
+        <div>
+          <div class="sec-head"><h2>Scouting report</h2><p>What I bring</p></div>
+          <ul class="skills">
+            <li>Product strategy</li><li>0 to 1 product development</li><li>Technical product management</li><li>Platform products</li>
+            <li>Fintech and banking</li><li>Fraud and AML</li><li>Product analytics and KPIs</li><li>Experimentation</li>
+            <li>Growth and monetization</li><li>OTT and live streaming</li><li>Identity and authentication</li><li>Generative AI workflows</li>
+            <li>Cross-functional leadership</li>
+          </ul>
+          <h3 class="minor">Intangibles</h3>
+          <ul class="skills">
+            <li>Lunch</li><li>Deep baseball knowledge</li><li>Has a cute puppy</li>
+          </ul>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer shell">
-    <p>© <span id="year"></span> Eric Hartman</p>
-    <p>Created using ChatGPT, Vercel, Github and my brain.</p>
-    <a href="#top">Back to top ↑</a>
+  <footer class="footer">
+    <div class="shell">
+      <p>© <span id="year">2026</span> Eric Hartman</p>
+      <p>Created using Claude, Vercel, GitHub and my brain.</p>
+    </div>
   </footer>
 </body>
 </html>
