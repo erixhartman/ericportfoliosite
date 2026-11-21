@@ -134,6 +134,7 @@ h4 { font-size: 14px; font-weight: 700; color: var(--sub); margin-bottom: 4px; }
 .quote figcaption strong { display: block; font-family: var(--cond); font-size: 20px; font-weight: 800; }
 .quote figcaption span { font-size: 14px; color: var(--sub); }
 .quote blockquote { margin: 0; font-size: 18px; line-height: 1.45; }
+.bring { max-width: 860px; }
 .scout-split { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 56px; }
 .trades { list-style: none; margin: 0; padding: 0; }
 .trades li { display: grid; grid-template-columns: minmax(0, 1fr) 92px minmax(0, 1fr); gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--rule); font-size: 16px; line-height: 1.35; align-items: baseline; }
