@@ -124,6 +124,18 @@ h4 { font-size: 14px; font-weight: 700; color: var(--sub); margin-bottom: 4px; }
 /* about */
 .about { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 56px; }
 .about .body { font-size: 18px; line-height: 1.6; }
+.about-single { grid-template-columns: minmax(0, 1fr); max-width: 860px; }
+
+/* Scouting report */
+.op { display: grid; grid-template-columns: 340px minmax(0, 1fr); gap: 28px; padding: 14px 18px; align-items: baseline; }
+.op h3 { font-family: var(--cond); font-size: 22px; font-weight: 800; line-height: 1.15; }
+.op p { font-size: 16px; line-height: 1.5; }
+.scout-split { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 56px; }
+.trades { list-style: none; margin: 0; padding: 0; }
+.trades li { display: grid; grid-template-columns: minmax(0, 1fr) 92px minmax(0, 1fr); gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--rule); font-size: 16px; line-height: 1.35; align-items: baseline; }
+.trades strong { font-weight: 700; }
+.trades .over { font-size: 13px; color: var(--sub); text-align: center; }
+.trades li > span:last-child { color: var(--sub); }
 .offfield { margin: 0; }
 .offfield div { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 20px; padding: 12px 0; border-bottom: 1px solid var(--rule); }
 .offfield dt { font-weight: 700; font-size: 17px; }
@@ -167,7 +179,8 @@ h4 { font-size: 14px; font-weight: 700; color: var(--sub); margin-bottom: 4px; }
   .bests li:nth-last-child(2) { border-bottom: 1px solid rgba(255,255,255,.16); }
   .bests strong { font-size: 30px; }
   .tabs { gap: 0; width: 100%; }
-  .tabs a { padding: 12px 14px 8px; font-size: 18px; }
+  .tabs a { padding: 12px 9px 8px; font-size: 16px; }
+  .tab-long { display: none; }
 
   .sec-head h2 { font-size: 28px; }
   .row { grid-template-columns: minmax(0, 1fr) auto; gap: 4px 12px; padding: 14px 12px; }
@@ -176,7 +189,11 @@ h4 { font-size: 14px; font-weight: 700; color: var(--sub); margin-bottom: 4px; }
   .row .what { grid-column: 1 / -1; margin-top: 6px; }
   .statline { gap: 6px 22px; }
   .statline strong { font-size: 28px; }
-  .split, .about { grid-template-columns: 1fr; gap: 8px; }
+  .split, .about, .scout-split { grid-template-columns: 1fr; gap: 8px; }
+  .op { grid-template-columns: 1fr; gap: 4px; padding: 14px 12px; }
+  .trades li { display: block; }
+  .trades strong { display: block; }
+  .trades .over { margin-right: 6px; }
   .transactions li { grid-template-columns: 1fr; gap: 0; }
   .cols { grid-template-columns: 1fr; gap: 12px; }
   .case { padding: 16px 12px; }
