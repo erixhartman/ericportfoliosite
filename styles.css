@@ -130,6 +130,10 @@ h4 { font-size: 14px; font-weight: 700; color: var(--sub); margin-bottom: 4px; }
 .op { display: grid; grid-template-columns: 340px minmax(0, 1fr); gap: 28px; padding: 14px 18px; align-items: baseline; }
 .op h3 { font-family: var(--cond); font-size: 22px; font-weight: 800; line-height: 1.15; }
 .op p { font-size: 16px; line-height: 1.5; }
+.quote { display: grid; grid-template-columns: 340px minmax(0, 1fr); gap: 28px; padding: 14px 18px; margin: 0; align-items: baseline; }
+.quote figcaption strong { display: block; font-family: var(--cond); font-size: 20px; font-weight: 800; }
+.quote figcaption span { font-size: 14px; color: var(--sub); }
+.quote blockquote { margin: 0; font-size: 18px; line-height: 1.45; }
 .scout-split { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 56px; }
 .trades { list-style: none; margin: 0; padding: 0; }
 .trades li { display: grid; grid-template-columns: minmax(0, 1fr) 92px minmax(0, 1fr); gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--rule); font-size: 16px; line-height: 1.35; align-items: baseline; }
@@ -191,6 +195,7 @@ h4 { font-size: 14px; font-weight: 700; color: var(--sub); margin-bottom: 4px; }
   .statline strong { font-size: 28px; }
   .split, .about, .scout-split { grid-template-columns: 1fr; gap: 8px; }
   .op { grid-template-columns: 1fr; gap: 4px; padding: 14px 12px; }
+  .quote { grid-template-columns: 1fr; gap: 4px; padding: 14px 12px; }
   .trades li { display: block; }
   .trades strong { display: block; }
   .trades .over { margin-right: 6px; }
