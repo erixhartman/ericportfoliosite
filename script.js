@@ -33,3 +33,6 @@
   const year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
 })();
+
+// Skip link moves focus without touching the hash (the hash picks the tab).
+document.querySelector('.skip')?.addEventListener('click', (e) => { e.preventDefault(); document.getElementById('main')?.focus(); });

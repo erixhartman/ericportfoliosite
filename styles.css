@@ -207,3 +207,8 @@ h4 { font-size: 14px; font-weight: 700; color: var(--sub); margin-bottom: 4px; }
   .offfield div { grid-template-columns: 1fr; gap: 2px; }
   .skills { grid-template-columns: 1fr; }
 }
+
+/* Skip link: hidden until a keyboard user tabs to it */
+.skip { position: absolute; left: -9999px; top: 8px; z-index: 50; background: #fff; color: var(--ink); padding: 8px 12px; font-weight: 600; }
+.skip:focus { left: 8px; }
+main:focus { outline: none; }

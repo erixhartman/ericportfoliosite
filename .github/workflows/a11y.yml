@@ -1,0 +1,21 @@
+name: Accessibility check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  a11y:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install the checker
+        run: npm i --no-save --no-package-lock playwright@1 @axe-core/playwright@4 && npx playwright install --with-deps chromium
+      - name: Run axe on every page
+        run: node .github/a11y/check.mjs

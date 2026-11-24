@@ -20,6 +20,7 @@
   <script src="script.js" defer></script>
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
   <header class="masthead">
     <div class="topbar shell">
       <a href="#work" class="brand">Eric Hartman</a>
@@ -72,7 +73,7 @@
     </div>
   </header>
 
-  <main class="shell">
+  <main class="shell" id="main" tabindex="-1">
 
     <!-- WORK -->
     <section class="panel" id="work" data-tab="work" aria-label="Work">
@@ -192,7 +193,7 @@
 
     <!-- PROJECTS -->
     <section class="panel" id="projects" data-tab="projects" aria-label="Projects">
-      <div class="sec-head"><h2>Projects</h2><p>Built in my spare time with Claude. I made the product calls; Claude wrote most of the code.</p></div>
+      <div class="sec-head"><h2>Projects</h2><p>Built in my spare time with Claude. I made the product calls; Claude wrote most of the code. Each one is built to WCAG 2.1 AA, and an automated accessibility check runs on every change.</p></div>
       <div class="rows">
         <article class="project">
           <div class="p-name">
