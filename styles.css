@@ -117,9 +117,6 @@ h4 { font-size: 14px; font-weight: 700; color: var(--sub); margin-bottom: 4px; }
 .p-name h3 a:hover { color: var(--red); }
 .p-name > span { font-size: 14px; color: var(--sub); }
 .p-links { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 15px !important; color: inherit !important; }
-.why { margin-top: 18px; padding: 16px 18px; background: var(--zebra); border-top: 3px solid var(--red); }
-.why h3 { font-family: var(--cond); font-size: 22px; font-weight: 800; margin-bottom: 4px; }
-.why p { max-width: 900px; font-size: 16px; line-height: 1.5; }
 
 /* about */
 .about { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 56px; }
