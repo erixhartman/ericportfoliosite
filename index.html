@@ -8,7 +8,9 @@
   <meta property="og:title" content="Eric Hartman, Senior Product Manager" />
   <meta property="og:description" content="Developer turned product manager. Sportsnet+, PCid at Loblaw Digital, and now a new Canadian digital bank at Haventree." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="assets/eric-donna.jpg" />
+  <meta property="og:image" content="/assets/project-screens/player-card.png" />
+  <meta property="og:image:alt" content="Eric Hartman’s baseball-inspired player card and career bests" />
+  <meta name="twitter:card" content="summary_large_image" />
   <title>Eric Hartman, Senior Product Manager</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="icon" type="image/png" sizes="64x64" href="favicon.png">
@@ -41,7 +43,7 @@
       </div>
       <div class="bio-main">
         <h1>Eric<br />Hartman</h1>
-        <p class="lead">I’m a developer turned product leader. At Sportsnet+, a better stream gave fans a reason to stay. At Haventree, the technology behind a simple banking experience spans six servicing systems. I lead the teams making those calls.</p>
+        <p class="intro">I’m a developer turned product leader. At Sportsnet+, a better stream gave fans a reason to stay. At Haventree, the technology behind a simple banking experience spans six servicing systems. I lead the teams making those calls.</p>
         <dl class="facts">
           <div><dt>Position</dt><dd>Senior Product Manager</dd></div>
           <div><dt>Current team</dt><dd>Haventree Bank, since June 2025</dd></div>
@@ -203,6 +205,7 @@
             <h3><a href="https://eric-hartman-inc.vercel.app">Eric Hartman Inc.</a></h3>
             <span>React, TypeScript, Vite, GitHub API, Vercel</span>
             <span class="p-links"><a href="https://eric-hartman-inc.vercel.app">Open the site</a><a href="https://github.com/erixhartman/eric-hartman-inc">Code on GitHub</a></span>
+            <a class="screen" href="assets/project-screens/goals.png"><img src="assets/project-screens/goals.png" width="1100" height="760" loading="lazy" alt="Enlarge screenshot of Running and reading goals" /></a>
           </div>
           <div><h4>What it does</h4><p>A public tracker for my FY2027 goals: the Toronto Half Marathon in May and 12 borrowed books by Jays Opening Day. Anyone can watch; only I can update it.</p></div>
           <div><h4>Design decision</h4><p>One editor and a public audience made an accounts system unnecessary. Each update is a Git commit that redeploys the tracker. The season record doubles as a history of what changed.</p></div>
@@ -212,6 +215,7 @@
             <h3><a href="https://thatsball.vercel.app">That's ball, baby!</a></h3>
             <span>React, TypeScript, Vite, GitHub Actions, Vercel</span>
             <span class="p-links"><a href="https://thatsball.vercel.app">Open the site</a><a href="https://github.com/erixhartman/thatsball">Code on GitHub</a></span>
+            <a class="screen" href="assets/project-screens/ball.png"><img src="assets/project-screens/ball.png" width="1100" height="760" loading="lazy" alt="Enlarge screenshot of MLB player dashboard" /></a>
           </div>
           <div><h4>What it does</h4><p>MLB dashboard of the top 50 hitters and pitchers, with contract values next to on-field value. Rebuilt from scratch after a friend and I first made it together.</p></div>
           <div><h4>Design decision</h4><p>I refresh the stats every morning with GitHub Actions. A daily comparison can run on a schedule, which leaves the interface free to answer the interesting question: how much production does a contract buy?</p></div>
@@ -221,6 +225,7 @@
             <h3><a href="https://beat-jeff.vercel.app">Beat Jeff</a></h3>
             <span>React, TypeScript, Vite, Python, GitHub Actions, Vercel</span>
             <span class="p-links"><a href="https://beat-jeff.vercel.app">Open the site</a><a href="https://github.com/erixhartman/beat-jeff">Code on GitHub</a></span>
+            <a class="screen" href="assets/project-screens/jeff.png"><img src="assets/project-screens/jeff.png" width="1100" height="760" loading="lazy" alt="Enlarge screenshot of Fantasy league dashboard" /></a>
           </div>
           <div><h4>What it does</h4><p>A draft and season planner for my 12-team fantasy baseball league, where one manager, Jeff, keeps finishing at the top. Rankings, a live draft board, scouting on every rival and a week-by-week scoreboard of me against Jeff.</p></div>
           <div><h4>Design decision</h4><p>Four seasons of our Yahoo matchups showed which categories actually decided wins. I used those categories to weight the rankings. A player’s value depends on the league you’re trying to win.</p></div>
@@ -230,6 +235,7 @@
             <h3><a href="https://donna-walks.vercel.app/?demo">Donna Walks</a></h3>
             <span>React, TypeScript, Vite, Vercel</span>
             <span class="p-links"><a href="https://donna-walks.vercel.app/?demo">Open the site</a><a href="https://github.com/erixhartman/donna-walks">Code on GitHub</a></span>
+            <a class="screen" href="assets/project-screens/donna.png"><img src="assets/project-screens/donna.png" width="460" height="760" loading="lazy" alt="Enlarge screenshot of Donna Walks public demo" /></a>
           </div>
           <div><h4>What it does</h4><p>A walk log for Donna, my reactive Lab: distance, bathroom breaks and every reaction, with what set her off, how close it was and how strong.</p></div>
           <div><h4>Design decision</h4><p>A walk log has to work with a leash in one hand. GPS handles distance and the phone stores the entries. That keeps our routes private, with the tradeoff that the history lives on one device.</p></div>
@@ -304,7 +310,7 @@
   <footer class="footer">
     <div class="shell">
       <p>© <span id="year">2026</span> Eric Hartman</p>
-      <p>Toronto · Thanks for stopping by the ballpark.</p>
+      <p>Toronto</p>
     </div>
   </footer>
   <!-- Development credits: original implementation with Claude, subsequent updates with ChatGPT. -->
