@@ -45,6 +45,9 @@ p { margin: 0; }
 .photo img { display: block; width: 200px; height: 250px; object-fit: cover; object-position: 40% 35%; }
 .bio-main { padding-bottom: 30px; }
 h1 { font-family: var(--cond); font-size: 76px; font-weight: 800; line-height: .9; text-transform: uppercase; letter-spacing: .01em; margin-bottom: 14px; }
+.intro { max-width: 48ch; margin: 12px 0 16px; font-size: 17px; line-height: 1.45; grid-column: 1 / -1; }
+.screen { display: block; width: fit-content; max-width: 100%; margin-top: 12px; }
+.screen img { display: block; height: auto; max-height: 180px; width: auto; border: 1px solid var(--rule); }
 .facts { margin: 0; display: grid; gap: 4px; font-size: 17px; }
 .facts div { display: flex; gap: 8px; }
 .facts dt { color: var(--on-navy-sub); font-weight: 600; }
