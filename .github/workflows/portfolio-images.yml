@@ -1,0 +1,30 @@
+name: Capture portfolio review images
+on:
+  push:
+    branches: [portfolio/scouting-preview]
+    paths: [.github/workflows/portfolio-images.yml]
+permissions:
+  contents: write
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          mkdir -p assets/project-screens
+          python3 -m http.server 8123 > /tmp/portfolio-http.log 2>&1 &
+          capture() {
+            google-chrome --headless --no-sandbox --disable-dev-shm-usage --hide-scrollbars --window-size="$3" --virtual-time-budget=12000 --screenshot="/tmp/$1.png" "$2"
+            convert "/tmp/$1.png" -quality 82 "assets/project-screens/$1.jpg"
+          }
+          capture goals https://eric-hartman-inc.vercel.app 1100,760
+          capture ball https://thatsball.vercel.app 1100,760
+          capture jeff https://beat-jeff.vercel.app 1100,760
+          capture donna 'https://donna-walks.vercel.app/?demo' 460,760
+          capture player-card http://localhost:8123 1200,630
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git config user.name 'github-actions[bot]'
+          git add assets/project-screens
+          git commit -m 'Capture public project screens and portfolio player card'
+          git push origin HEAD:portfolio/scouting-preview
