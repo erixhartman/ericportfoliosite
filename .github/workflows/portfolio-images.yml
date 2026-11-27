@@ -16,7 +16,7 @@ jobs:
           python3 -m http.server 8123 > /tmp/portfolio-http.log 2>&1 &
           capture() {
             google-chrome --headless --no-sandbox --disable-dev-shm-usage --hide-scrollbars --window-size="$3" --virtual-time-budget=12000 --screenshot="/tmp/$1.png" "$2"
-            convert "/tmp/$1.png" -quality 82 "assets/project-screens/$1.jpg"
+            cp "/tmp/$1.png" "assets/project-screens/$1.png"
           }
           capture goals https://eric-hartman-inc.vercel.app 1100,760
           capture ball https://thatsball.vercel.app 1100,760
