@@ -1,0 +1,44 @@
+name: Measure player card
+on:
+  push:
+    branches: [portfolio/scouting-preview]
+    paths: [.github/workflows/measure-card.yml]
+permissions:
+  contents: write
+jobs:
+  measure:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 3
+      - run: |
+          git show HEAD~2:index.html > before.html
+          python3 -m http.server 8123 >/tmp/card-http.log 2>&1 &
+          python3 -m venv /tmp/card-tools
+          /tmp/card-tools/bin/pip -q install selenium
+          /tmp/card-tools/bin/python - <<'PY'
+          from selenium import webdriver
+          opts = webdriver.ChromeOptions()
+          opts.add_argument('--headless')
+          opts.add_argument('--no-sandbox')
+          with webdriver.Chrome(options=opts) as d:
+              for width in [390, 1280]:
+                  d.set_window_size(width, 900)
+                  heights = []
+                  for page in ['before.html', 'index.html']:
+                      d.get('http://localhost:8123/'+page)
+                      d.execute_async_script('document.fonts.ready.then(arguments[0])')
+                      heights.append(d.execute_script("return document.querySelector('.masthead').offsetHeight"))
+                      assert d.execute_script('return document.documentElement.scrollWidth <= innerWidth')
+                  print('Measured masthead', width, heights)
+                  assert heights[1] < heights[0]
+              d.execute_cdp_cmd('Emulation.setDeviceMetricsOverride',dict(width=1200,height=630,deviceScaleFactor=1,mobile=False))
+              d.save_screenshot('assets/project-screens/player-card.png')
+          PY
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git config user.name 'github-actions[bot]'
+          git add assets/project-screens/player-card.png
+          git commit -m 'Refresh sharing image with compact player card'
+          git push origin HEAD:portfolio/scouting-preview
