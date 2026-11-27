@@ -8,7 +8,7 @@ Each tab has its own link, so you can send someone straight to one:
 
 - [Work](https://eric-hartman-portfolio.vercel.app/#work): roles, stats and a career timeline
 - [Highlights](https://eric-hartman-portfolio.vercel.app/#highlights): four case studies, from problem to result
-- [Projects](https://eric-hartman-portfolio.vercel.app/#projects): side projects I built with Claude
+- [Projects](https://eric-hartman-portfolio.vercel.app/#projects): side projects I build with AI assistance
 - [About](https://eric-hartman-portfolio.vercel.app/#about): bio, interests, education and contact
 
 ## What's in here
@@ -54,4 +54,4 @@ Vercel deploys every push to `main`. Changes are live in about a minute.
 
 ## Credits
 
-Designed and built with Claude.
+Originally designed and built with Claude. Subsequent updates use ChatGPT, with product direction and review by Eric Hartman.
