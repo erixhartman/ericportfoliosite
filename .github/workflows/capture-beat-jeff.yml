@@ -1,0 +1,38 @@
+name: Capture Beat Jeff thumbnail
+on:
+  push:
+    branches: [portfolio/beat-jeff-thumbnail]
+    paths: [.github/workflows/capture-beat-jeff.yml]
+permissions:
+  contents: write
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install --no-save playwright@1
+      - name: Capture verified production page
+        run: |
+          node --input-type=module <<'JS'
+          import { chromium } from 'playwright';
+          const browser = await chromium.launch({ channel: 'chrome', headless: true, args: ['--no-sandbox', '--disable-dev-shm-usage'] });
+          const page = await browser.newPage({ viewport: { width: 1100, height: 760 }, deviceScaleFactor: 1 });
+          const response = await page.goto('https://beat-jeff.vercel.app/', { waitUntil: 'networkidle', timeout: 45000 });
+          if (!response?.ok()) throw new Error('Production returned non-success HTTP status');
+          await page.locator('.rivalry-record').waitFor({ state: 'visible' });
+          await page.locator('.scoreboard').waitFor({ state: 'visible' });
+          await page.evaluate(() => document.fonts.ready);
+          if (!(await page.locator('.wordmark').innerText()).includes('Jeff!')) throw new Error('Unexpected production design');
+          await page.screenshot({ path: 'assets/project-screens/jeff.png', animations: 'disabled' });
+          await browser.close();
+          JS
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git config user.name 'github-actions[bot]'
+          git add assets/project-screens/jeff.png
+          git diff --cached --quiet && exit 1
+          git commit -m 'Capture refreshed Beat Jeff production screenshot'
+          git push origin HEAD:portfolio/beat-jeff-thumbnail
